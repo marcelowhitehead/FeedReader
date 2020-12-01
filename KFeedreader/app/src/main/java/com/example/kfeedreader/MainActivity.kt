@@ -46,5 +46,11 @@ class MainActivity : AppCompatActivity(), Callback {
 
     }
 
-    data class Item(val titulo: String, val autor: String, val data: Long, val link: Uri, val imagem: String)
+    data class Item(
+        val titulo: String,
+        val autor: String,
+        val data: Long,
+        val link: Uri,
+        val imagem: String
+    )
 }

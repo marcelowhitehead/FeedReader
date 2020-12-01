@@ -25,10 +25,9 @@ class ItemAdapter(val list: ArrayList<MainActivity.Item>, val context: Context) 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        val v = LayoutInflater.from(parent?.context).inflate(R.layout.item_list, parent, false)
-        val ivh = ItemViewHolder(v)
-
-        return ivh
+        return ItemViewHolder(
+            LayoutInflater.from(parent?.context).inflate(R.layout.item_list, parent, false)
+        )
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {

@@ -6,7 +6,7 @@ import android.os.AsyncTask
 import android.widget.ImageView
 import java.net.URL
 
-class DownloadImageTask(val imageView: ImageView): AsyncTask<String, Void, Bitmap>() {
+class DownloadImageTask(val imageView: ImageView) : AsyncTask<String, Void, Bitmap>() {
 
 
     override fun doInBackground(vararg p0: String?): Bitmap {
